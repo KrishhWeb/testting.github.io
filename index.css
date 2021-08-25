@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.logo {
+    width: 100%;
+    height: fit-content;
+    background: darkblue;
+}
+.logo h1{
+    color: white;
+    padding-left: 40px;
+    font-size: 25px;
+}
+@media (max-width:320px) {
+    .logo h1{
+        color: white;
+        padding-left: 30px;
+        font-size: 25px;
+    }
+    nav ul {
+        clip-path: circle(8% at 88% 10%);
+    }
+    
+}
+.logo .krishna{
+    padding-top: 25px;
+    line-height: 10px;
+}
+
+.logo h1,h2{
+    font-family: 'Cedarville Cursive', cursive;
+}
+body{
+    background-image: url(absback.jpg);
+    background-repeat: no-repeat ;
+    background-position: center;
+
+}
+
+nav{
+    position: absolute;
+    float: right;
+    text-align: right;
+    justify-content: right;
+    top: 0;
+    right: 0;
+    z-index: 10;
+   
+}
+nav ul {
+    text-align: right;
+    list-style: none;
+    width: 300px;
+    background: #5112ef;
+    padding: 24px 0;
+    height: 91.5vh;
+    clip-path: circle(6% at 88% 7%);
+}
+nav ul.active{
+    clip-path: circle(100% at 170%  );
+}
+
+
+nav ul .menu{
+    position: relative;
+    width: 48px;
+    height: 40px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+    position: static;
+
+}
+nav ul .menu span{
+    position: absolute;
+    text-align: right;
+    float: right;
+    right: 20px;
+    margin-top: 20px;
+    background: white;
+    padding: 1.5px;
+    width: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav .menu span:nth-child(1){
+    top: 11px;
+}
+nav .menu span:nth-child(2){
+    top: 18px;
+    width: 23px;
+}
+nav .menu span:nth-child(3){
+    top: 25px;
+    width: 30px;
+}
+nav ul.active .menu span:nth-child(1){
+    top: 5px;
+    right: 23px;
+    width: 1px;
+    height: 25px;
+    transform: rotateZ(45deg);
+    background-color: red;
+}
+nav ul.active .menu span:nth-child(2){
+    width: 30px;
+    right: 10px;
+    transform: rotateZ(45deg);
+    background-color: red;
+}
+nav ul.active .menu span:nth-child(3){
+    padding: 0;
+    width: 0px;
+   
+}
+nav ul li {
+    padding: 10px 30px;
+    color: white;
+    padding-top: 2px;
+
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 0px;
+
+}
+
+nav ul li:hover {
+    background-color: #401295;
+    padding-right: 60px;
+    padding-top: 5px;
+}
+
+/*Home Section*/
+.home{
+    margin-top: 10%;
+    position: relative;
+    width: 80%;
+    display: block;
+}
+.home img{
+  float: right;
+  background: transparent;
+  border-radius: 50%;
+
+}
+.image{
+    background: #5112ef;
+    border-radius: 56% 44% 76% 24% 29% 72% 28% 71% ;
+    border: 1px solid blue;
+    width: 400px;
+    position: sticky;
+    float: right;
+}
